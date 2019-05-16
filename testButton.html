@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="obs.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+    <body>
+<div class="pen-wrapper">
+
+    <div class="buton-cover button-slide-out">
+        <span class="button-slide-out__above" style="text-align: center">are you sure?</span>
+
+        <div class="button-slide-out__middle">
+            <button class="btn">reset</button>
+        </div>
+
+        <div class="button-slide-out__below">
+            <button class="btn" style="background-color: #eeeeee; color: black">cancel</button>
+        </div>
+    </div>
+
+
+
+    </body>
+
+    <script>
+        ; (function ($) {
+
+            function clickHandler() {
+                $(this).parents('.buton-cover').toggleClass('is_active');
+            }
+
+            $('.btn').on('click', clickHandler);
+
+        }(jQuery));</script>
+</html>
